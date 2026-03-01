@@ -381,6 +381,7 @@ jobs:
           cd openwrt/
           ${{ github.workspace }}/${DIY_P1_SH}
           curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh --no-sfe
+          ${{ secrets.ADD_EXTRA_SOURCE }}
 
       - name: Update feeds
         run: cd openwrt/ && ./scripts/feeds update -a
