@@ -469,7 +469,7 @@ jobs:
           removeArtifacts: false
           replacesArtifacts: true
           makeLatest: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Packaging OpenWrt
         if: ${{ steps.clean.outputs.status == 'success' && !cancelled() }}
@@ -494,7 +494,7 @@ jobs:
           removeArtifacts: false
           replacesArtifacts: true
           makeLatest: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
           body: |
             ### OpenWrt Image information
             - Default IP: `192.168.1.1`
