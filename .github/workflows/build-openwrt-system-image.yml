@@ -318,7 +318,7 @@ jobs:
           date -u
           timedatectl status || true
           echo "status=success" >> ${GITHUB_OUTPUT}
-          git config --global url."https://$ACCESS_TOKEN@github.com/0xACE8/".insteadOf "https://github.com/0xACE8/"
+          git config --global url."https://${{ secrets.ACCESS_TOKEN }}@github.com/0xACE8/".insteadOf "https://github.com/0xACE8/"
           git config --global core.compression 0
 
       - name: Create simulated physical disk
