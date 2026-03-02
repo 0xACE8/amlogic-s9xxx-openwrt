@@ -2748,7 +2748,6 @@ CONFIG_PACKAGE_kmod-macsec=y
 CONFIG_PACKAGE_kmod-mdio-bus-mux=y
 # CONFIG_PACKAGE_kmod-mdio-netlink is not set
 # CONFIG_PACKAGE_kmod-misdn is not set
-CONFIG_PACKAGE_kmod-ml-tcp-lotspeed=y
 # CONFIG_PACKAGE_kmod-mpls is not set
 # CONFIG_PACKAGE_kmod-nat46 is not set
 # CONFIG_PACKAGE_kmod-netconsole is not set
